@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1459796747 source:c:\users\axel r\desktop\tp_laboratorio_1\tp1\tp1_laboratorio_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"funciones.h"
+
+1459820627 c:\users\axel r\desktop\tp_laboratorio_1\tp1\tp1_laboratorio_1\funciones.h
+
