@@ -1,6 +1,7 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
-int num1(x)
+
+int op1(x)
 {
     /*REALIZAMOS EN INGRESO DEL 1ER OPERANDO*/
     printf("Ingrese el 1er operando: ");
@@ -8,7 +9,8 @@ int num1(x)
     system("cls");
     return x;
 }
-int num2 (y)
+
+int op2 (y)
 {
     /*REALIZAMOS EL INGRESO DEL 2DO OPERANDO*/
     printf("Ingrese el 2do operando: ");
@@ -16,18 +18,22 @@ int num2 (y)
     system("cls");
     return y;
 }
+
 void suma (x,y)
 {
     /*SUMAMOS AMBOS OPERANDOS*/
     printf("El resultado de la suma es: %d\n",x+y);
 }
+
 void resta (x,y)
 {
     /*RESTAMOS AMBOS OPERANDOS*/
     printf("El resultado de la resta es: %d\n",x-y);
 }
+
 void division (x,y)
 {
+    float a=x,b=y;
     /*VERIFICAMOS QUE EL DIVISOR (2DO OPERANDO) NO SEA 0*/
     if(y==0)
     {
@@ -36,26 +42,31 @@ void division (x,y)
     /*SI EL DIVISOR (2DO OPERANDO) ES DISTINTO A 0 PROCEDEMOS CON LA DIVISION*/
     else
     {
-        printf("El resultado de la division es: %d\n",x/y);
+        printf("El resultado de la division es: %.2f\n",a/b);
     }
 }
+
 void multiplicacion (x,y)
 {
     /*MULTIPLICAMOS AMBOS OPERANDOS*/
     printf("El resultado de la multiplicacion es: %d\n",x*y);
 }
+
 void factorial (x)
 {
     /*BUSCAMOS EL NUMERO FACTORIAL DEL PRIMER OPERANDO*/
     int i=x;
     double fac=1;
+
     while(i!=0)
     {
         fac=fac*i;
         i--;
     }
+
     printf("El numero factorial de %d es: %lg\n",x,fac);
 }
+
 void error()
 {
     /*SI LA OPCION INGRESADA NO ES VALIDA MOSTRAMOS UN MENSAJE DE ERROR Y VOLVEMOS AL MENU*/
@@ -66,4 +77,5 @@ void error()
     system("pause");
     system("cls");
 }
+
 #endif // FUNCIONES_H_INCLUDED

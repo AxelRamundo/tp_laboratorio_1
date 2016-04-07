@@ -25,10 +25,10 @@ int main()
         switch(opcion)
         {
             case 1:
-                x = num1(x);
+                x = op1(x);
                 break;
             case 2:
-                y = num2(y);
+                y = op2(y);
                 break;
             case 3:
                 suma(x,y);
