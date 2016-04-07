@@ -6,7 +6,7 @@
 int main()
 {
     char seguir='s';
-    int opcion=0, x=0, y=0;
+    int opcion=0, x=0, y=0,v=0,w=0;
 
     while(seguir=='s')
     {
