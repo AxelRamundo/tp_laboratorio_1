@@ -32,21 +32,37 @@ int main()
                 break;
             case 3:
                 suma(x,y);
+                system("pause");
+                system("cls");
                 break;
             case 4:
                 resta(x,y);
+                system("pause");
+                system("cls");
                 break;
             case 5:
                 division(x,y);
+                system("pause");
+                system("cls");
                 break;
             case 6:
                 multiplicacion(x,y);
+                system("pause");
+                system("cls");
                 break;
             case 7:
                 factorial(x);
+                system("pause");
+                system("cls");
                 break;
             case 8:
-                todas(x,y);
+                suma(x,y);
+                resta(x,y);
+                division(x,y);
+                multiplicacion(x,y);
+                factorial(x);
+                system("pause");
+                system("cls");
                 break;
             case 9:
                 seguir = 'n';
