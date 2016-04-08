@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include <conio.h>
 #include "funciones.h"
 
 int main()
 {
     char seguir='s';
-    int opcion=0, x=0, y=0,v=0,w=0;
+    int opcion=0, x=0, y=0;
 
     while(seguir=='s')
     {
@@ -20,51 +21,57 @@ int main()
         printf("8- Calcular todas las operaciones\n");
         printf("9- Salir\n");
 
-        scanf("%d",&opcion);
+        opcion=getch();
 
         switch(opcion)
         {
-            case 1:
+            case '1':
                 x = num1(x);
                 break;
-            case 2:
+            case '2':
                 y = num2(y);
                 break;
-            case 3:
+            case '3':
                 suma(x,y);
+                printf("\n");
                 system("pause");
                 system("cls");
                 break;
-            case 4:
+            case '4':
                 resta(x,y);
+                printf("\n");
                 system("pause");
                 system("cls");
                 break;
-            case 5:
+            case '5':
                 division(x,y);
+                printf("\n");
                 system("pause");
                 system("cls");
                 break;
-            case 6:
+            case '6':
                 multiplicacion(x,y);
+                printf("\n");
                 system("pause");
                 system("cls");
                 break;
-            case 7:
+            case '7':
                 factorial(x);
+                printf("\n");
                 system("pause");
                 system("cls");
                 break;
-            case 8:
+            case '8':
                 suma(x,y);
                 resta(x,y);
                 division(x,y);
                 multiplicacion(x,y);
                 factorial(x);
+                printf("\n");
                 system("pause");
                 system("cls");
                 break;
-            case 9:
+            case '9':
                 seguir = 'n';
                 break;
             default:
